@@ -31,7 +31,7 @@ class DemoApplicationTests {
 		System.out.println("----- select all -----");
 		userDao.findAll().forEach(System.out::println);
 		System.out.println("----- delete all -----");
-		userDao.deleteAll();
+		userDao.deleteAllInBatch();
 	}
 
 }
